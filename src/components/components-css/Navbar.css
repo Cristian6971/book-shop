@@ -1,0 +1,154 @@
+/* src/pages-css/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-search {
+  width: 300px;
+  padding: 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.navbar-link {
+  margin-left: 15px;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #1f2937;
+  text-decoration: underline;
+}
+
+/* Search Bar */
+.navbar-center {
+  position: relative;
+}
+
+.navbar-search {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Lista de sugestii */
+/* Asigură-te că containerul search-container are poziție relativă */
+.search-container {
+  position: relative;
+}
+
+/* Stilizarea dropdown-ului de căutare */
+.search-dropdown {
+  position: absolute;
+  top: 100%; /* plasat imediat sub input */
+  left: 0;
+  width: 100%;
+  max-height: 300px; /* poți ajusta înălțimea maximă */
+  overflow-y: auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* asigură-te că se suprapune peste alte elemente */
+}
+
+/* Stilizare pentru elementele din dropdown */
+.search-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search-dropdown li:hover {
+  background-color: #f9f9f9;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+}
+
+.search-result-cover {
+  width: 40px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.search-result-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.search-result-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Media queries pentru dispozitive mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+  
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .navbar-logo {
+    font-size: 28px;
+  }
+  
+  .navbar-search {
+    width: 100%;
+    max-width: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 18px;
+  }
+  
+  /* Dropdown pe mobil se extinde pe lățimea input-ului */
+  .search-dropdown {
+    width: 100%;
+  }
+}

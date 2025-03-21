@@ -1,0 +1,178 @@
+/* Importul fonturilor vintage și clasice */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+/* === Store.css === */
+.store-container {
+  background: #fdf7e3; /* nuanță de pergament */
+  font-family: "Libre Baskerville", serif; /* font clasic pentru titlu și textul general */
+  color: #4b3621;
+  padding: 40px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Etichete pentru categorii – folosim scrisul vintage */
+.category-label {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4b3621;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* === Home.css === */
+.home-container {
+  background-color: #faf3e0;
+  min-height: 100vh;
+  font-family: "Georgia", serif;
+  color: #333;
+  padding: 20px;
+}
+
+.home-header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.home-subtitle {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 70px;
+}
+
+.store-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1f2937;
+  color: #fff;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.store-button:hover {
+  background-color: #374151;
+}
+
+/* Secțiunea de carusele */
+.carousel-section {
+  margin: 40px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* Stilurile pentru slider */
+.book-carousel .slick-slide {
+  padding: 0 10px;
+}
+
+/* Eliminăm stilurile implicite ale săgeților */
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+}
+
+/* Stil pentru iconița din săgeți */
+.arrow-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Stilizarea cardurilor de carte */
+.book-card {
+  background-color: #fff;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  width: 250px; /* Lățime fixă */
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+/* Stiluri pentru coperta cărții în Home */
+.home-container .book-card .book-cover {
+  display: block;
+  margin: 0 auto 10px; /* Imaginea este centrată */
+  width: 100%;
+  max-height: 220px; /* Limitează înălțimea maximă */
+  object-fit: contain; /* Afișează întreaga imagine fără a o decupa */
+}
+
+.no-cover {
+  width: 100%;
+  height: 220px;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Informațiile despre carte */
+.book-info {
+  text-align: center;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.book-author {
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.book-price {
+  font-size: 0.9rem;
+  color: #e67e22; /* Portocaliu vintage */
+  font-weight: bold;
+}
+
+
+/* Stilizarea containerelor pentru săgeți (poziționare corectă) */
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.book-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Clasă utilitară pentru scrisul vintage (o poți aplica oricărui element dorit) */
+.vintage {
+  font-family: "Great Vibes", cursive;
+}

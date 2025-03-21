@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+/* Containerul principal al coșului */
+.cart-container {
+    padding: 100px;
+}
+  
+/* Secțiunea coșului gol */
+.cart-container__empty {
+    text-align: center;
+}
+
+.cart-container h1,
+.cart-container p {
+   color: #000;
+}
+
+.cart-container h1 {
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 60px;
+    font-size: 2.8rem;
+    text-align: center;
+}
+  
+.cart-container__empty .cart-container__store-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1f2937;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.cart-container__empty .cart-container__store-button:hover {
+    background-color: #4b5563;
+}
+  
+/* Lista articolelor din coș */
+.cart-container__items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+/* Fiecare articol din coș */
+.cart-container__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+  
+/* Coperta cărții (mărimea a fost mărită) */
+.cart-container__item-cover {
+    width: 150px;
+    height: auto;
+}
+  
+/* Detaliile articolului */
+.cart-container__item-details {
+    display: flex;
+    flex-direction: column;
+}
+  
+.cart-container__item-title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+  
+.cart-container__item-author,
+.cart-container__item-price {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.cart-container__item-price {
+    color: #e67e22 !important; 
+    font-weight: bold;
+}
+
+  
+/* Controlul cantității */
+.cart-container__item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+  
+.cart-container__item-quantity input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+}
+  
+/* Butonul de ștergere */
+.cart-container__item-delete {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+  
+/* Totalul coșului */
+.cart-container__total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Media query pentru telefoane */
+@media (max-width: 768px) {
+    .cart-container {
+      padding: 40px 20px;
+    }
+  
+    .cart-container h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  
+    .cart-container__items {
+      gap: 10px;
+    }
+  
+    .cart-container__item {
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+  
+    .cart-container__item-cover {
+      width: 120px;
+    }
+  
+    .cart-container__item-details {
+      align-items: center;
+    }
+  
+    .cart-container__item-title {
+      font-size: 1rem;
+    }
+  
+    .cart-container__item-author,
+    .cart-container__item-price {
+      font-size: 0.9rem;
+    }
+  
+    .cart-container__item-quantity {
+      justify-content: center;
+    }
+  
+    .cart-container__item-quantity input {
+      width: 50px;
+      font-size: 0.9rem;
+    }
+  
+    .cart-container__item-delete {
+      width: 100%;
+      font-size: 0.85rem;
+      padding: 8px;
+      text-align: center;
+    }
+  
+    .cart-container__total {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  
+    .cart-container__empty .cart-container__store-button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+    }
+  }
+  

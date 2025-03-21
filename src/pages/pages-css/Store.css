@@ -1,0 +1,62 @@
+/* pages-css/Store.css */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.store-container {
+  background: #fdf7e3; /* nuanță de pergament */
+  font-family: 'Libre Baskerville', serif; /* font clasic pentru titlu și textul general */
+  color: #4b3621;
+  padding: 40px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.store-title {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: #1f2937;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.category-card {
+  background: #fff;
+  border: 2px solid #d3c0a9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  width: 100%;
+  max-width: 300px; /* carduri puțin mai mari */
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-cover {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #d3c0a9;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.category-label {
+  font-family: 'Great Vibes', cursive; /* text cursiv doar pentru categorii */
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4b3621;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}

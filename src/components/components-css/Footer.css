@@ -1,0 +1,29 @@
+/* Asigură că pagina ocupă întreaga înălțime */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container principal care va umple toată pagina */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Face ca pagina să aibă minim 100% din viewport */
+}
+
+/* Conținutul principal al paginii */
+.main-content {
+  flex: 1; /* Ocupă tot spațiul disponibil și împinge footer-ul în jos */
+}
+
+/* Footer-ul rămâne jos */
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: #4b5563;
+  background-color: #fff;
+  width: 100%;
+}
